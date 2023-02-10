@@ -9,7 +9,7 @@ Mastodon Bot written in swift.
 - You have an application token 
 - If using VSCODE  extension "sswg.swift-lang" has been installed 
 - Swift 5.7 is installed on the machine (check with `swift --version`)
-- A gitignore with the items in `gitignore_example.txt`
+- A gitignore with the items in `gitignore_example.txt` (`.env`!!!)
 
 ### Writing a New Bot: 
 
@@ -41,6 +41,7 @@ Also note that the reference to `TrunkLine` references a branch instead of a ver
 
 Some people change this and just have a `main.swift` file in the `Sources/your_bot_project_name` directory which then is the contents of their `@main` function. 
 
+Change the contents of that file to match the contents of `hello_server_example.swift` and try `swift run`. Your bot should have posted! 
 
 
 ## References & Resources
