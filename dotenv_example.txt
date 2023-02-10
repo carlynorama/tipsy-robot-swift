@@ -1,0 +1,2 @@
+SERVER_TOKEN=s0meCr4zyt0k3n
+SERVER_NAME=bot.server.social
