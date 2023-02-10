@@ -17,10 +17,14 @@ If you'd like to start from scratch, here are the steps
 
 1) Run the following commands to get the bot executable started and verify that it can build:
 
+```
+
     mkdir your_bot_project_name
     cd your_bot_project_name
     swift package init --type executable
     swift run                                   #will see Hello, world! in console. 
+
+```
 
 2) Update the `Package.swift` to include `ArgumentParser` and `TrunkLine` or some other MastodonAPI library. See this projects `Package.swift`. 
 
@@ -30,6 +34,8 @@ Also note that the reference to `TrunkLine` references a branch instead of a ver
 
 3) Note that the `swift package init` command created two directories (`Sources/your_bot_project_name`) and made a file called `your_bot_project_name.swift` in that file is a function that looks like:
 
+```
+
     @main
     public struct your_bot_project_name {
         public private(set) var text = "Hello, World!"
@@ -38,6 +44,8 @@ Also note that the reference to `TrunkLine` references a branch instead of a ver
             print(your_bot_project_name().text)
         }
     }
+
+```
 
 Some people change this and just have a `main.swift` file in the `Sources/your_bot_project_name` directory which then is the contents of their `@main` function. 
 
