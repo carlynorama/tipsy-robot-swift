@@ -7,7 +7,7 @@ Mastodon Bot written in swift.
 
 ### Assumptions: 
 - You have an application token 
-- If using VSCODE  extension "sswg.swift-lang" has been installed 
+- If using VSCODE  extension `sswg.swift-lang` has been installed 
 - Swift 5.7 is installed on the machine (check with `swift --version`)
 - A gitignore with the items in `gitignore_example.txt` (`.env`!!!)
 
@@ -30,7 +30,7 @@ If you'd like to start from scratch, here are the steps
 
 Since `TrunkLine` requires `.macOS(.v12)` for now, so does this example. 
 
-Also note that the reference to `TrunkLine` references a branch instead of a version number because it is my library and it's under development in tandem with this project. If working on a library at the same time as using it in a project `swift package update` forces your project to go fetch the newest version. 
+Also note that the reference to `TrunkLine` references a branch instead of a version number because it is my library and it's under development in tandem with this project. If working on a library at the same time as using it in a project `swift package update` forces your project to go fetch the newest version. If that still is not enough, delete the `.build` folder, but that may be an indicator
 
 3) Note that the `swift package init` command created two directories (`Sources/your_bot_project_name`) and made a file called `your_bot_project_name.swift` in that file is a function that looks like:
 

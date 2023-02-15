@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "tipsy-robot-swift",
     platforms: [ 
-        .macOS(.v12),
+        .macOS(.v13),
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.2.0"),
