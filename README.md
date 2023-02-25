@@ -1,7 +1,23 @@
 # Tipsy Robot
 
-Mastodon Bot written in swift. 
+Mastodon Bot written in swift model after the bot exercises demo'd in [Mastodon Bot example](https://thecodingtrain.com/tracks/mastodon) from Daniel Shiffman's CodingTrain channel.
 
+TODO's Back End
+
+- [x] retrieve a public endpoint
+- [x] log in using .env
+- [x] update with a text post once
+- [x] update with an image post once
+- [] save logs to file instead of print 
+- [] update with an interval
+- [x] open a stream that can see an auth requiring endpoint
+- [] can it run on Linux?
+
+TODO's CLI
+- [] begin a listening task
+- [] document using a chron job
+- [] move to its ubuntu home
+ 
 
 ## Project Startup
 
