@@ -9,8 +9,12 @@ TODO's Back End
 - [x] update with a text post once
 - [x] update with an image post once
 - [] save logs to file instead of print 
-- [] update with an interval
+- [x] update with an interval - within the program
+- [] cancel timer update
+- [] update with an interval - cron job
 - [x] open a stream that can see an auth requiring endpoint
+- [] easy func to get results from in a window leading to a since "since last" style interaction. 
+- [] react to notification (mention, favorite, boost, mention/hashtag combo)
 - [] can it run on Linux?
 
 TODO's CLI
