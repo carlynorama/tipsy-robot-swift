@@ -31,19 +31,19 @@ public struct tipsy_robot_swift {
        //Check credential will pass if credential is in the .env file as shown.
        //it is loaded into the server during the "makeServer" function. 
        let response =  try await botServer.checkCredential()
-       //print(String(data:response, encoding: .utf8)!)
+       print(String(data:response, encoding: .utf8)!)
 
-       let timer = testTimer()
-       // let message = "Checking in on the CLI after the big refactor... \(Date.now)..."
+       //let timer = testTimer()
+       let message = "Confirming tipsy-dev works on MacOS... \(Date.now)..."
        
        // simplest message post.
-       //try await botServer.newPost(message: message)
+       try await botServer.newPost(message: message)
 
        //simplest image post NOTE: This function name will change. 
-    //    let imagePostMessage = "Posting an image from the CLI... \(Date.now)."
-    //    let imageFile = "small_jpg_test.jpg"
-    //    let imageAltText = "This image again? Flowers, woodland floor, blah blah blah."
-    //    try await botServer.newPostWithImage(message: imagePostMessage, imageFilePath: imageFile , imageAltText: imageAltText)
+        let imagePostMessage = "Posting an image from the dev-CLI/MacOS... \(Date.now)."
+        let imageFile = "small_jpg_test.jpg"
+        let imageAltText = "This image again? Flowers, woodland floor, blah blah blah."
+        try await botServer.newPostWithImage(message: imagePostMessage, imageFilePath: imageFile , imageAltText: imageAltText)
        
     }
 
