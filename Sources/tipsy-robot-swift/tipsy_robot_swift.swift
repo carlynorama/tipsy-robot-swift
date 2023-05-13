@@ -2,7 +2,7 @@ import Foundation
 import ArgumentParser
 import TrunkLine
 
-
+let currentMachine = "Ubuntu22VM"
 public private(set) var botServer:MastodonServer = makeServer()
 
 func makeServer() -> MastodonServer {
@@ -26,6 +26,7 @@ func makeServer() -> MastodonServer {
 
 @main
 public struct tipsy_robot_swift {
+    
 
     public static func main() async throws {
        //Check credential will pass if credential is in the .env file as shown.
@@ -34,13 +35,13 @@ public struct tipsy_robot_swift {
        print(String(data:response, encoding: .utf8)!)
 
        //let timer = testTimer()
-       let message = "Confirming tipsy-dev works on MacOS... \(Date.now)..."
+       let message = "Confirming tipsy-dev works on \(currentMachine)... \(Date.now)..."
        
        // simplest message post.
        try await botServer.newPost(message: message)
 
        //simplest image post NOTE: This function name will change. 
-        let imagePostMessage = "Posting an image from the dev-CLI/MacOS... \(Date.now)."
+        let imagePostMessage = "Posting an image from the dev-CLI/\(currentMachine)... \(Date.now)."
         let imageFile = "small_jpg_test.jpg"
         let imageAltText = "This image again? Flowers, woodland floor, blah blah blah."
         try await botServer.newPostWithImage(message: imagePostMessage, imageFilePath: imageFile , imageAltText: imageAltText)
